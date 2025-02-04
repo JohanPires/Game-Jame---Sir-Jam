@@ -1,0 +1,143 @@
+{
+  "norme": [
+    {
+      "id": "21",
+      "name": "NF C 15-100-1",
+      "description": "Exigences générales"
+    },
+    {
+      "id": "1",
+      "name": "NF C 15-100-7-701",
+      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
+    },
+    {
+      "id": "2",
+      "name": "NF C 15-100-7-702",
+      "description": "Piscines et autres bassins"
+    },
+    {
+      "id": "3",
+      "name": "NF C 15-100-7-703",
+      "description": "Locaux contenant des radiateurs pour saunas"
+    },
+    {
+      "id": "4",
+      "name": "NF C 15-100-7-704",
+      "description": "Installations de chantier"
+    },
+    {
+      "id": "5",
+      "name": "NF C 15-100-7-705",
+      "description": "Bâtiments agricoles"
+    },
+    {
+      "id": "6",
+      "name": "NF C 15-100-7-706",
+      "description": "Enceintes conductrices exigües"
+    },
+    {
+      "id": "7",
+      "name": "NF C 15-100-7-708",
+      "description": "Installations électriques de parcs de caravanes"
+    },
+    {
+      "id": "8",
+      "name": "NF C 15-100-7-709",
+      "description": "Ports et ports de plaisance"
+    },
+    {
+      "id": "9",
+      "name": "NF C 15-100-7-711",
+      "description": "Installations temporaires : baraques, stands,\nmarchés, fêtes foraines..."
+    },
+    {
+      "id": "10",
+      "name": "NF C 15-100-7-715",
+      "description": "Installation d’éclairage à basse tension"
+    },
+    {
+      "id": "11",
+      "name": "NF C 15-100-7-717",
+      "description": "Unités mobiles ou transportables"
+    },
+    {
+      "id": "12",
+      "name": "NF C 15-100-7-722",
+      "description": "Alimentation des véhicules électriques"
+    },
+    {
+      "id": "13",
+      "name": "NF C 15-100-7-729",
+      "description": "Locaux ou emplacements de services électriques"
+    },
+    {
+      "id": "14",
+      "name": "NF C 15-100-7-752",
+      "description": "Aires de distribution de carburants liquides"
+    },
+    {
+      "id": "15",
+      "name": "NF C 15-100-7-753",
+      "description": "Câbles chauffants et systèmes de chauffage"
+    },
+    {
+      "id": "16",
+      "name": "NF C 15-100-7-756",
+      "description": "Parcs de stationnement"
+    },
+    {
+      "id": "17",
+      "name": "NF C 15-100-7-773",
+      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
+    },
+    {
+      "id": "18",
+      "name": "NF C 15-100-8-1",
+      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
+    },
+    {
+      "id": "19",
+      "name": "NF C 15-100-10",
+      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
+    },
+    {
+      "id": "20",
+      "name": "NF C 15-100-11",
+      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
+    }
+  ],
+  "parafoudre": [
+    {
+      "id": "1",
+      "name": "T2",
+      "description": "Parafoudre T2 1P+N - Imax 20 kA T1 + T2"
+    },
+    {
+      "id": "2",
+      "name": "T3",
+      "description": "Parafoudre T1+T2\n3P+N - Iimp 12,5 kA"
+    }
+  ],
+  "differentiel": [
+    {
+      "id": "1",
+      "name": "Type A",
+      "description": "Interrupteur différentiel DX3 -ID bipolaire 63 A - Type A"
+    },
+    {
+      "id": "2",
+      "name": "Type AC",
+      "description": " équipements pour applications d’usage général"
+    },
+    {
+      "id": "3",
+      "name": "Type B",
+      "description": "Interrupteur différentiel DX3 -ID tétrapolaire 63 A - Type B"
+    },
+    {
+      "id": "4",
+      "name": "Type F",
+      "description": "Interrupteur différentiel DX3 -ID bipolaire 40 A - Type F"
+    }
+  ]
+}
