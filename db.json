@@ -1,0 +1,95 @@
+{
+  "normes": {
+    "nom": "NF C 15-100",
+    "description": "Norme électrique française régissant l'installation des équipements électriques dans les bâtiments."
+  },
+  "formulaire_client": {
+    "champs": [
+      "nom_client",
+      "email",
+      "telephone",
+      "pieces_concernees",
+      "nombre_lampes_par_piece",
+      "nombre_prises_par_piece"
+    ]
+  },
+  "regles_electriques": {
+    "eclairage": {
+      "max_points_par_circuit": 8,
+      "disjoncteur": {
+        "intensite": 10,
+        "type": "C"
+      },
+      "cable": {
+        "section_mm2": 1.5,
+        "longueur_max": 50
+      },
+      "normes": "Circuit d'éclairage en 1.5 mm² avec disjoncteur 10A. Conformité NF C 15-100 section 771.314.2.2."
+    },
+    "prises": {
+      "max_points_par_circuit": 12,
+      "disjoncteur": {
+        "intensite": 16,
+        "type": "C"
+      },
+      "cable": {
+        "section_mm2": 2.5,
+        "longueur_max": 50
+      },
+      "normes": "Circuit de prises en 2.5 mm² avec disjoncteur 16A. Conformité NF C 15-100 section 771.314.2.3."
+    },
+    "prises_speciales": {
+      "appareils": [
+        { "nom": "Plaque de cuisson", "disjoncteur": 32, "section_mm2": 6, "normes": "Alimentation dédiée en 6 mm² avec disjoncteur 32A. NF C 15-100 section 772.314.2.5." },
+        { "nom": "Four", "disjoncteur": 20, "section_mm2": 2.5, "normes": "Alimentation dédiée en 2.5 mm² avec disjoncteur 20A. NF C 15-100 section 772.314.2.6." },
+        { "nom": "Lave-linge", "disjoncteur": 20, "section_mm2": 2.5, "normes": "Circuit spécialisé en 2.5 mm² avec disjoncteur 20A. NF C 15-100 section 772.314.2.7." },
+        { "nom": "Sèche-serviette", "disjoncteur": 10, "section_mm2": 1.5, "normes": "Alimentation dédiée en 1.5 mm² avec disjoncteur 10A et différentiel 30mA type A. NF C 15-100 section 772.314.2.8." }
+      ]
+    },
+    "tableau_electrique": {
+      "differentiel": {
+        "type": "AC et A",
+        "sensibilite_mA": 30,
+        "normes": "Un différentiel type A pour circuits spécialisés et un type AC pour circuits standards. NF C 15-100 section 772.413.1."
+      },
+      "parafoudre": {
+        "obligatoire_si_terrain_expose": true,
+        "types": ["Type 1", "Type 2"],
+        "normes": "Obligatoire si risque de surtension élevé ou selon le règlement local. NF C 15-100 section 534."
+      }
+    },
+    "recommandations_pieces": {
+      "salle_de_bain": {
+        "normes": "Respect des volumes de sécurité. Appareils électriques protégés par différentiel 30mA type A. Prises interdites à moins de 60 cm de la baignoire/douche. NF C 15-100 section 701."
+      },
+      "cuisine": {
+        "normes": "Minimum 6 prises dont 4 sur le plan de travail. Circuits spécialisés pour four, plaques de cuisson, lave-vaisselle. NF C 15-100 section 772.314.2.9."
+      },
+      "chambre": {
+        "normes": "Minimum 3 prises. Éclairage commandé par interrupteur mural. NF C 15-100 section 772.314.2.10."
+      },
+      "salon": {
+        "normes": "Minimum 5 prises, une prise RJ45 pour réseau multimédia, circuit d'éclairage indépendant. NF C 15-100 section 772.314.2.11."
+      }
+    }
+  },
+  "resultat": {
+    "materiaux_requis": [
+      {"type": "disjoncteur", "quantite": 0, "details": ""},
+      {"type": "cable", "quantite": 0, "details": ""},
+      {"type": "interrupteur", "quantite": 0, "details": ""},
+      {"type": "prises", "quantite": 0, "details": ""}
+    ],
+    "conseils": [],
+    "estimation_prix": 0
+  },
+  "demande_devis": {
+    "champs": [
+      "nom_client",
+      "email",
+      "telephone",
+      "adresse_projet",
+      "details_demande"
+    ]
+  }
+}
