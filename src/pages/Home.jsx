@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button } from "../components/ui/Button";
-import { Input } from "../components/ui/input";
 import { Card } from "../components/ui/card";
 import { CardContent } from "../components/ui/CardContent";
 
@@ -14,9 +13,11 @@ const FormulaireElectrique = () => {
 
   const handleChange = (e) => {
     const { name, value, type } = e.target;
+
+    // Vérifie si la valeur entrée est un nombre et parse la valeur
     setFormData({
       ...formData,
-      [name]: type === "number" ? Number(value) : value,
+      [name]: type === "number" ? (value === "" ? 0 : parseInt(value, 10)) : value,
     });
   };
 
@@ -100,10 +101,10 @@ const FormulaireElectrique = () => {
             <label className="block font-semibold text-gray-700 mb-2">
               Combien avez-vous de points lumineux ?
             </label>
-            <Input
+            <input
               type="number"
               name="lampes"
-              value={formData.lampes}
+              value={formData.lampes || ""}
               onChange={handleChange}
               placeholder="Nombre de lampes"
               className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FFCD29] focus:border-[#FFCD29]"
@@ -115,10 +116,10 @@ const FormulaireElectrique = () => {
             <label className="block font-semibold text-gray-700 mb-2">
               Combien avez-vous de prises électriques ?
             </label>
-            <Input
+            <input
               type="number"
               name="prises"
-              value={formData.prises}
+              value={formData.prises || ""}
               onChange={handleChange}
               placeholder="Nombre de prises"
               className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FFCD29] focus:border-[#FFCD29]"
