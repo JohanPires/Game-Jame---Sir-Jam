@@ -1,143 +1,95 @@
 {
-  "norme": [
-    {
-      "id": "21",
-      "name": "NF C 15-100-1",
-      "description": "Exigences générales"
+  "normes": {
+    "nom": "NF C 15-100",
+    "description": "Norme électrique française régissant l'installation des équipements électriques dans les bâtiments."
+  },
+  "formulaire_client": {
+    "champs": [
+      "nom_client",
+      "email",
+      "telephone",
+      "pieces_concernees",
+      "nombre_lampes_par_piece",
+      "nombre_prises_par_piece"
+    ]
+  },
+  "regles_electriques": {
+    "eclairage": {
+      "max_points_par_circuit": 8,
+      "disjoncteur": {
+        "intensite": 10,
+        "type": "C"
+      },
+      "cable": {
+        "section_mm2": 1.5,
+        "longueur_max": 50
+      },
+      "normes": "Circuit d'éclairage en 1.5 mm² avec disjoncteur 10A. Conformité NF C 15-100 section 771.314.2.2."
     },
-    {
-      "id": "1",
-      "name": "NF C 15-100-7-701",
-      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
+    "prises": {
+      "max_points_par_circuit": 12,
+      "disjoncteur": {
+        "intensite": 16,
+        "type": "C"
+      },
+      "cable": {
+        "section_mm2": 2.5,
+        "longueur_max": 50
+      },
+      "normes": "Circuit de prises en 2.5 mm² avec disjoncteur 16A. Conformité NF C 15-100 section 771.314.2.3."
     },
-    {
-      "id": "2",
-      "name": "NF C 15-100-7-702",
-      "description": "Piscines et autres bassins"
+    "prises_speciales": {
+      "appareils": [
+        { "nom": "Plaque de cuisson", "disjoncteur": 32, "section_mm2": 6, "normes": "Alimentation dédiée en 6 mm² avec disjoncteur 32A. NF C 15-100 section 772.314.2.5." },
+        { "nom": "Four", "disjoncteur": 20, "section_mm2": 2.5, "normes": "Alimentation dédiée en 2.5 mm² avec disjoncteur 20A. NF C 15-100 section 772.314.2.6." },
+        { "nom": "Lave-linge", "disjoncteur": 20, "section_mm2": 2.5, "normes": "Circuit spécialisé en 2.5 mm² avec disjoncteur 20A. NF C 15-100 section 772.314.2.7." },
+        { "nom": "Sèche-serviette", "disjoncteur": 10, "section_mm2": 1.5, "normes": "Alimentation dédiée en 1.5 mm² avec disjoncteur 10A et différentiel 30mA type A. NF C 15-100 section 772.314.2.8." }
+      ]
     },
-    {
-      "id": "3",
-      "name": "NF C 15-100-7-703",
-      "description": "Locaux contenant des radiateurs pour saunas"
+    "tableau_electrique": {
+      "differentiel": {
+        "type": "AC et A",
+        "sensibilite_mA": 30,
+        "normes": "Un différentiel type A pour circuits spécialisés et un type AC pour circuits standards. NF C 15-100 section 772.413.1."
+      },
+      "parafoudre": {
+        "obligatoire_si_terrain_expose": true,
+        "types": ["Type 1", "Type 2"],
+        "normes": "Obligatoire si risque de surtension élevé ou selon le règlement local. NF C 15-100 section 534."
+      }
     },
-    {
-      "id": "4",
-      "name": "NF C 15-100-7-704",
-      "description": "Installations de chantier"
-    },
-    {
-      "id": "5",
-      "name": "NF C 15-100-7-705",
-      "description": "Bâtiments agricoles"
-    },
-    {
-      "id": "6",
-      "name": "NF C 15-100-7-706",
-      "description": "Enceintes conductrices exigües"
-    },
-    {
-      "id": "7",
-      "name": "NF C 15-100-7-708",
-      "description": "Installations électriques de parcs de caravanes"
-    },
-    {
-      "id": "8",
-      "name": "NF C 15-100-7-709",
-      "description": "Ports et ports de plaisance"
-    },
-    {
-      "id": "9",
-      "name": "NF C 15-100-7-711",
-      "description": "Installations temporaires : baraques, stands,\nmarchés, fêtes foraines..."
-    },
-    {
-      "id": "10",
-      "name": "NF C 15-100-7-715",
-      "description": "Installation d’éclairage à basse tension"
-    },
-    {
-      "id": "11",
-      "name": "NF C 15-100-7-717",
-      "description": "Unités mobiles ou transportables"
-    },
-    {
-      "id": "12",
-      "name": "NF C 15-100-7-722",
-      "description": "Alimentation des véhicules électriques"
-    },
-    {
-      "id": "13",
-      "name": "NF C 15-100-7-729",
-      "description": "Locaux ou emplacements de services électriques"
-    },
-    {
-      "id": "14",
-      "name": "NF C 15-100-7-752",
-      "description": "Aires de distribution de carburants liquides"
-    },
-    {
-      "id": "15",
-      "name": "NF C 15-100-7-753",
-      "description": "Câbles chauffants et systèmes de chauffage"
-    },
-    {
-      "id": "16",
-      "name": "NF C 15-100-7-756",
-      "description": "Parcs de stationnement"
-    },
-    {
-      "id": "17",
-      "name": "NF C 15-100-7-773",
-      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
-    },
-    {
-      "id": "18",
-      "name": "NF C 15-100-8-1",
-      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
-    },
-    {
-      "id": "19",
-      "name": "NF C 15-100-10",
-      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
-    },
-    {
-      "id": "20",
-      "name": "NF C 15-100-11",
-      "description": "Locaux contenant une baignoire ou une douche (salle d’eau)"
+    "recommandations_pieces": {
+      "salle_de_bain": {
+        "normes": "Respect des volumes de sécurité. Appareils électriques protégés par différentiel 30mA type A. Prises interdites à moins de 60 cm de la baignoire/douche. NF C 15-100 section 701."
+      },
+      "cuisine": {
+        "normes": "Minimum 6 prises dont 4 sur le plan de travail. Circuits spécialisés pour four, plaques de cuisson, lave-vaisselle. NF C 15-100 section 772.314.2.9."
+      },
+      "chambre": {
+        "normes": "Minimum 3 prises. Éclairage commandé par interrupteur mural. NF C 15-100 section 772.314.2.10."
+      },
+      "salon": {
+        "normes": "Minimum 5 prises, une prise RJ45 pour réseau multimédia, circuit d'éclairage indépendant. NF C 15-100 section 772.314.2.11."
+      }
     }
-  ],
-  "parafoudre": [
-    {
-      "id": "1",
-      "name": "T2",
-      "description": "Parafoudre T2 1P+N - Imax 20 kA T1 + T2"
-    },
-    {
-      "id": "2",
-      "name": "T3",
-      "description": "Parafoudre T1+T2\n3P+N - Iimp 12,5 kA"
-    }
-  ],
-  "differentiel": [
-    {
-      "id": "1",
-      "name": "Type A",
-      "description": "Interrupteur différentiel DX3 -ID bipolaire 63 A - Type A"
-    },
-    {
-      "id": "2",
-      "name": "Type AC",
-      "description": " équipements pour applications d’usage général"
-    },
-    {
-      "id": "3",
-      "name": "Type B",
-      "description": "Interrupteur différentiel DX3 -ID tétrapolaire 63 A - Type B"
-    },
-    {
-      "id": "4",
-      "name": "Type F",
-      "description": "Interrupteur différentiel DX3 -ID bipolaire 40 A - Type F"
-    }
-  ]
+  },
+  "resultat": {
+    "materiaux_requis": [
+      {"type": "disjoncteur", "quantite": 0, "details": ""},
+      {"type": "cable", "quantite": 0, "details": ""},
+      {"type": "interrupteur", "quantite": 0, "details": ""},
+      {"type": "prises", "quantite": 0, "details": ""}
+    ],
+    "conseils": [],
+    "estimation_prix": 0
+  },
+  "demande_devis": {
+    "champs": [
+      "nom_client",
+      "email",
+      "telephone",
+      "adresse_projet",
+      "details_demande"
+    ]
+  }
 }
