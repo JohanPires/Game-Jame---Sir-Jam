@@ -1,0 +1,42 @@
+{
+    "product" : [
+      {
+        "disjoncteurA" : {
+          "type" : "A",
+          "parafoudre" : "oui"
+        }
+      },
+      {
+        "disjoncteurB" : {
+          "type" : "B",
+          "parafoudre" : "non"
+        }
+      },
+      {
+        "disjoncteurC" : {
+          "type" : "B",
+          "parafoudre" : "non"
+        }
+      },
+      {
+        "PriseA" : {
+          "type" : "A"
+        }
+      },
+      {
+        "PriseB" : {
+          "type" : "B"
+        }
+      },
+      {
+        "AmpouleA" : {
+          "type" : "A"
+        }
+      },
+      {
+        "AmpouleB" : {
+          "type" : "B"
+        }
+      }
+    ]
+  }
